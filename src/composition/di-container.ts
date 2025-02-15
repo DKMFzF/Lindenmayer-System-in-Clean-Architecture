@@ -14,4 +14,7 @@ import '@/adapters/dom/composition'
 import '@/adapters/graphics/context/composition';
 import '@/adapters/graphics/drawer/composition';
 
+// composition
+import '@/composition/launching-app/composition';
+
 export { container }
