@@ -7,6 +7,6 @@ export type SystemSettings = {
   iterations: IterationsCount;
 }
 
-export interface SystemBuilder {
+export interface ISystemBuilder {
 	build(settings: SystemSettings): Expression;
 }

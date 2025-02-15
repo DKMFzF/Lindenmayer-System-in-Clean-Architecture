@@ -1,6 +1,6 @@
 import { SystemState, Expression, RuleSet, Character } from '@/types/domain/l-system';
 import { List } from '@/types/base/global';
-import { SystemBuilder, SystemSettings } from '@/components/l-system/types';
+import { ISystemBuilder, SystemSettings } from '@/components/l-system/types';
 
 /**
  * @class Builder - модель постройки дерева Пифагора. Domain слой.
@@ -22,7 +22,7 @@ import { SystemBuilder, SystemSettings } from '@/components/l-system/types';
  * @private { applyRules(rules: RuleSet): void  } - метод, который применяет правила к текущему состоянию
  */
 
-export class Builder implements SystemBuilder {
+export class Builder implements ISystemBuilder {
   private state: SystemState = '';
 
   public build({ rules, initiator, iterations }: SystemSettings): Expression {

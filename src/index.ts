@@ -1,8 +1,8 @@
 import './scss/styles.scss'
 import { container } from '@/components/composition';
-import { SystemBuilder } from '@/components/l-system/types';
+import { ISystemBuilder } from '@/components/l-system/types';
 
-const builder = container.get<SystemBuilder>('SystemBuilder');
+const builder = container.get<ISystemBuilder>('ISystemBuilder');
 const buildValue =  builder.build({
   initiator: '0',
   iterations: 3,
