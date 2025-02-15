@@ -2,18 +2,13 @@ import '../presentation/scss/styles.scss'
 import { container } from '@/composition/di-container';
 import { ISystemBuilder } from '@/domain/l-system/types';
 import { Drawer } from "@/adapters/graphics/drawer/types";
+import { SystemInterpreter } from '@/application/interpreter/types';
+import { APP_SETTINGS } from '@/infrastructure/app-settings';
 
-// Testing ISystemBuilder
 const builder = container.get<ISystemBuilder>('ISystemBuilder');
-const buildValue =  builder.build({
-  initiator: '0',
-  iterations: 3,
-  rules: { '1': '11', '0': '1[0]0' }
-});
-console.log(buildValue);
-
 const drawer = container.get<Drawer>('Drawer');
-drawer.drawLine({
-  start: { x: 0, y: 0 },
-	end: { x: 100, y: 100 }
-})
+const interpreter = container.get<SystemInterpreter>('SystemInterpreter');
+
+const system = builder.build(APP_SETTINGS);
+const lines = interpreter.translate(system);
+lines.forEach((line) => drawer.drawLine(line));

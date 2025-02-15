@@ -18,7 +18,6 @@ export interface IDIContainer {
   get<T>(key: string): T;
 }
 
-
 export class DIContainer implements IDIContainer {
   private services: Map<string, any> = new Map();
 

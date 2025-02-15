@@ -5,6 +5,7 @@ import { CanvasContextProvider } from "../context/implementation";
 import { DomSource } from "@/adapters/dom/implementation";
 import { APP_SETTINGS } from "@/infrastructure/app-settings";
 
+// по хорошу тут должен быть каскад, но да ладно
 container.register<Drawer>('Drawer', new CanvasDrawer(
   new CanvasContextProvider(
     new DomSource(window),
