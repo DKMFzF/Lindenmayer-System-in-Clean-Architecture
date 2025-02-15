@@ -10,6 +10,8 @@ import '@/application/Stack/composition';
 import '@/application/interpreter/composition';
 
 // adapters
+import '@/adapters/dom/composition'
+import '@/adapters/graphics/context/composition';
 import '@/adapters/graphics/drawer/composition';
 
 export { container }

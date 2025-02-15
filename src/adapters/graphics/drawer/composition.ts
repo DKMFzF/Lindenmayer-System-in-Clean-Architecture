@@ -6,10 +6,6 @@ import { DomSource } from "@/adapters/dom/implementation";
 import { APP_SETTINGS } from "@/infrastructure/app-settings";
 
 // по хорошу тут должен быть каскад, но да ладно
-container.register<Drawer>('Drawer', new CanvasDrawer(
-  new CanvasContextProvider(
-    new DomSource(window),
-    { devicePixelRatio: undefined },
-    APP_SETTINGS
-  )
-));
+container.register<Drawer>('Drawer', 
+  new CanvasDrawer(container.get<CanvasContextProvider>('CanvasContextProvider'))
+);
