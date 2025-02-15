@@ -10,11 +10,12 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "noUnusedLocals": false,
+    "strict": true,
     "noUnusedParameters": false,
     "outDir": "dist",
     "paths": {
       "@/*": ["./src/*"]
-    },
+    }
   },
-  "include": ["src"]
+  "include": ["./src/**/*", "./src/types/*"]
 }

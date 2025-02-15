@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { DefinePlugin } = require('webpack');
 const TerserPlugin = require("terser-webpack-plugin");
-const { di } = require("@wessberg/di-compiler");
 
 require('dotenv').config({
   path: path.join(process.cwd(), process.env.NODE_ENV ? `.env.${process.env.NODE_ENV}` : '.env')
@@ -42,17 +41,6 @@ const config = {
   ],
   module: {
     rules: [
-      {
-        test: /.ts$/,
-        use: [
-          {
-            loader: "ts-loader",
-            options: {
-              getCustomTransformers: (program) => di({ program }),
-            },
-          },
-        ],
-      },
       {
         test: /\.(ts|tsx)$/i,
         use: ["babel-loader", "ts-loader"],

@@ -1,2 +1,2 @@
-import { DIContainer } from '@wessberg/di';
-export const container = new DIContainer(); // DI container for dependencies
+// import { DIContainer } from '@wessberg/di';
+// export const container = new DIContainer(); // DI-контейнер для внедрения зависимостей
