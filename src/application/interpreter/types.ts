@@ -10,5 +10,5 @@ export type Instruction = {
 };
 
 export interface SystemInterpreter {
-	translate(expression: Expression): List<Line>;
+	translate(expression: Expression): List<Instruction>;
 }

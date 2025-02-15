@@ -7,14 +7,14 @@ export const APP_SETTINGS: IAppSettings = {
     height: 600,
   },
 
-  iterations: 12,
+  iterations: 16,
   initiator: "11110",
   rules: {
     "1": "21",
     "0": "1[20]20",
   },
 
-  stemLength: 30,
+  stemLength: 4,
   jointAngle: 20,
   leafWidth: 4,
   stemWidth: 16,

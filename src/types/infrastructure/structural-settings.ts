@@ -20,5 +20,9 @@ export interface IStructuralSettings {
     }
   }
 
+  infrastructure: {
+    random: string;
+  }
+
   launchingApp: string;
 }

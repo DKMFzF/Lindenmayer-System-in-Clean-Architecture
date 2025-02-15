@@ -1,5 +1,8 @@
 import { container } from '@/infrastructure/DI-container/core';
 
+// infrastructure
+import '@/infrastructure/random/composition';
+
 // domain
 import '@/domain/l-system/composition';
 import '@/domain/geometry/location/composition'

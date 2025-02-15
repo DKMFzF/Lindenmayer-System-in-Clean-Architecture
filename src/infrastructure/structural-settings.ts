@@ -22,5 +22,9 @@ export const STRUCTURAL_SETTINGS: IStructuralSettings = {
     }
   },
 
+  infrastructure: {
+    random: 'RandomSource'
+  },
+
   launchingApp: 'Application'
 }
