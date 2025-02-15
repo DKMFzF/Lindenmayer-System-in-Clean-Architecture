@@ -1,2 +1,4 @@
-// import { DIContainer } from '@wessberg/di';
-// export const container = new DIContainer(); // DI-контейнер для внедрения зависимостей
+import { DIContainer } from "@/utils/di-container";
+
+// Экспортируем экземпляр контейнера
+export const container = new DIContainer();

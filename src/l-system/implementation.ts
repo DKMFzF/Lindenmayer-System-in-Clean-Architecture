@@ -1,5 +1,5 @@
-import { SystemState, Expression, RuleSet, Character } from '@/types/l-system';
-import { List } from '@/types/global';
+import { SystemState, Expression, RuleSet, Character } from '@/types/domain/l-system';
+import { List } from '@/types/base/global';
 import { SystemBuilder, SystemSettings } from '@/l-system/types';
 
 /**

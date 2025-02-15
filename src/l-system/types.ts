@@ -1,4 +1,4 @@
-import { RuleSet, Axiom, IterationsCount, Expression } from "@/types/l-system";
+import { RuleSet, Axiom, IterationsCount, Expression } from "@/types/domain/l-system";
 
 // типы публичного API
 export type SystemSettings = {
