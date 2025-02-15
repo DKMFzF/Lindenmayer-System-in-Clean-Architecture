@@ -6,6 +6,7 @@ import '@/domain/geometry/location/composition'
 import '@/domain/geometry/shape/composition'
 
 // application
+import '@/application/Stack/composition';
 import '@/application/interpreter/composition';
 
 // adapters
