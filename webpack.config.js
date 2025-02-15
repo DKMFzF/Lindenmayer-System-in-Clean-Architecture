@@ -23,12 +23,12 @@ const config = {
   devServer: {
     open: true,
     host: "localhost",
-    watchFiles: ["src/pages/*.html"],
+    watchFiles: ["src/presentation/pages/*.html"],
     hot: true
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/pages/index.html"
+      template: "src/presentation/pages/index.html"
     }),
 
     new MiniCssExtractPlugin(),
