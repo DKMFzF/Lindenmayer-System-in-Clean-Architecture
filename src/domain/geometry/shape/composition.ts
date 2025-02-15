@@ -1,4 +1,4 @@
-import { container } from "@/domain/composition/core";
+import { container } from "@/infrastructure/DI-container/core";
 import { IShapeBuilder } from "@/domain/geometry/shape/types";
 import { CoreShapeBuilder } from "@/domain/geometry/shape/implementation";
 

@@ -1,4 +1,4 @@
-import { container } from '@/domain/composition/core';
+import { container } from '@/infrastructure/DI-container/core';
 import { ISystemBuilder } from '@/domain/l-system/types';
 import { Builder } from '@/domain/l-system/implementation';
 
