@@ -1,6 +1,6 @@
 import './scss/styles.scss'
-import { container } from '@/composition';
-import { SystemBuilder } from '@/l-system/types';
+import { container } from '@/components/composition';
+import { SystemBuilder } from '@/components/l-system/types';
 
 const builder = container.get<SystemBuilder>('SystemBuilder');
 const buildValue =  builder.build({
