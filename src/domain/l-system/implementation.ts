@@ -1,6 +1,6 @@
 import { SystemState, Expression, RuleSet, Character } from '@/types/domain/l-system';
 import { List } from '@/types/base/global';
-import { ISystemBuilder, SystemSettings } from '@/components/l-system/types';
+import { ISystemBuilder, SystemSettings } from '@/domain/l-system/types';
 
 /**
  * @class Builder - модель постройки дерева Пифагора. Domain слой.

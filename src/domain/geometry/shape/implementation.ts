@@ -1,4 +1,4 @@
-import { IShapeBuilder } from "@/components/geometry/shape/types";
+import { IShapeBuilder } from "@/domain/geometry/shape/types";
 import { Angle, Length, Line, Point } from "@/types/domain/geometry";
 
 /**

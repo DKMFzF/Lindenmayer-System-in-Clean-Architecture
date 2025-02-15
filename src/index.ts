@@ -1,8 +1,8 @@
 import './scss/styles.scss'
-import { container } from '@/components/composition';
-import { ISystemBuilder } from '@/components/l-system/types';
-import { IStartSelector } from "@/components/geometry/location/types";
-import { IShapeBuilder } from "@/components/geometry/shape/types";
+import { container } from '@/domain/composition';
+import { ISystemBuilder } from '@/domain/l-system/types';
+import { IStartSelector } from "@/domain/geometry/location/types";
+import { IShapeBuilder } from "@/domain/geometry/shape/types";
 
 // Testing ISystemBuilder
 // const builder = container.get<ISystemBuilder>('ISystemBuilder');
