@@ -1,4 +1,4 @@
-import { IAppSettings } from "@/types/infrastructure/settings";
+import { IAppSettings } from "@/types/infrastructure/app-settings";
 
 // в идеале этот модуль доллжен быть так же вписан в DI-контейнер
 export const APP_SETTINGS: IAppSettings = {

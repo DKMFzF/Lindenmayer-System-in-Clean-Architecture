@@ -5,10 +5,11 @@ import { APP_SETTINGS } from '@/infrastructure/app-settings';
 import { JointsStack } from "../Stack/implementation";
 import { IShapeBuilder } from "@/domain/geometry/shape/types";
 import { IStartSelector } from "@/domain/geometry/location/types";
+import { STRUCTURAL_SETTINGS } from "@/infrastructure/structural-settings";
 
-container.register<SystemInterpreter>('SystemInterpreter', new SystemToGeometryMapper(
-  container.get<IShapeBuilder>('IShapeBuilder'),
-  container.get<IStartSelector>('IStartSelector'),
-  container.get<JointsStack>('JointsStack'),
+container.register<SystemInterpreter>(STRUCTURAL_SETTINGS.application.interpreter, new SystemToGeometryMapper(
+  container.get<IShapeBuilder>(STRUCTURAL_SETTINGS.domain.geometry.shape),
+  container.get<IStartSelector>(STRUCTURAL_SETTINGS.domain.geometry.local),
+  container.get<JointsStack>(STRUCTURAL_SETTINGS.application.stack),
   APP_SETTINGS,
 ));

@@ -1,6 +1,6 @@
 import { IStartSelector } from "@/domain/geometry/location/types";
 import { Point } from "@/types/domain/geometry";
-import { IAppSettings } from "@/types/infrastructure/settings";
+import { IAppSettings } from "@/types/infrastructure/app-settings";
 
 export class StartPointSelector implements IStartSelector {
   constructor(private settings: IAppSettings) {}

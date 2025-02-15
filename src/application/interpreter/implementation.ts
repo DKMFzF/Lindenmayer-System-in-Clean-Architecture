@@ -3,7 +3,7 @@ import { SystemInterpreter } from "./types";
 import { List } from "@/types/base/global";
 import { Character, Expression } from "@/types/domain/l-system";
 import { CoreShapeBuilder } from "@/domain/geometry/shape/implementation";
-import { IAppSettings } from "@/types/infrastructure/settings";
+import { IAppSettings } from "@/types/infrastructure/app-settings";
 import { Stack } from "../Stack/types";
 import { TreeJoint } from "@/types/application/tree";
 import { IStartSelector } from "@/domain/geometry/location/types";

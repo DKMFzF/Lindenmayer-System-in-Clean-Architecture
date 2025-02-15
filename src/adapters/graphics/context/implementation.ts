@@ -1,7 +1,7 @@
 import { Nullable } from "@/types/base/global";
 import { DrawingContext, DrawingContextProvider } from "./types";
 import { ElementSource, PixelRatioSource } from "@/adapters/dom/types";
-import { IAppSettings } from "@/types/infrastructure/settings";
+import { IAppSettings } from "@/types/infrastructure/app-settings";
 
 export class CanvasContextProvider implements DrawingContextProvider {
 	private element: Nullable<HTMLCanvasElement> = null;

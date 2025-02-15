@@ -2,7 +2,7 @@ import { Application } from "./types";
 import { ISystemBuilder } from "@/domain/l-system/types";
 import { Drawer } from "@/adapters/graphics/drawer/types";
 import { SystemInterpreter } from "@/application/interpreter/types";
-import { IAppSettings } from "@/types/infrastructure/settings";
+import { IAppSettings } from "@/types/infrastructure/app-settings";
 
 // entry point app (fased pattern)
 export class App implements Application {
