@@ -1,0 +1,9 @@
+@use '../scss/variables' as *;
+
+.title {
+  font-size: 2rem;
+}
+
+.text-accent {
+  color: $accentColor;
+}

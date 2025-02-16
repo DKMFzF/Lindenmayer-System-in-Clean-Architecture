@@ -48,10 +48,23 @@
 
   &__tag {
     padding: 8px;
-    border: 1px solid black;
+    border: 1px solid $accentColor;
     border-radius: 15px;
     white-space: nowrap;
     font-size: $fontSizeDefault;
+    background-color: black;
+    transition: border-color 0.2s ease-in-out, 
+              background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out,
+              transform 0.2s ease-in-out;
+
+    &:hover {
+      border-color: #000000;
+      background-color: $accentColor;
+      cursor: pointer;
+      color: black;
+      transform: rotateX(360deg);
+    }
   }
 
   &__title {

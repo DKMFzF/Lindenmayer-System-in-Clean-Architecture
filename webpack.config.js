@@ -43,7 +43,10 @@ const config = {
 
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/static/tree.png', to: 'tree.png' } 
+        { from: 'src/static/tree.png', to: 'tree.png' },
+        { from: 'src/static/apple-touch-icon.png', to: 'apple-touch-icon.png'},
+        { from: 'src/static/favicon.ico', to: 'favicon.ico' },
+        { from: 'src/static/favicon.svg', to: 'favicon.svg' },
       ]
     })
   ],
