@@ -71,7 +71,9 @@ yarn build
 
 #### Мало детализированная диаграмма проекта
 ![uml-диограмма проекта](./uml.png)
-![state](./state.png)
+<div>
+  <img width="100%" src="./state.png" alt="state">
+</div>
 
 ## Полезные ссылки
 - [Что такое L-системы?](https://habr.com/ru/articles/540062/)

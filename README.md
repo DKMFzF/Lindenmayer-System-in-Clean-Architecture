@@ -73,7 +73,9 @@ A pure architecture organizes a system in the form of concentric layers, where t
 
 #### The detailed diagram of the project is small
 ![uml](./docs/uml.png)
-![state](./docs/state.png)
+<div>
+  <img width="100%" src="./docs/state.png" alt="state">
+</div>
 
 ## Useful links
 - [What are L-systems?](https://habr.com/ru/articles/540062/)
