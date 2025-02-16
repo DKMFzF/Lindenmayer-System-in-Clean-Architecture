@@ -10,7 +10,7 @@
   &__wrapper {
     @include logic-features.logic-size($block: 100%);
     @include logic-features.logic-size($inline: map.get($breakpoints, lg));
-    padding-block: 100px;
+    // padding-block: 100px;
     margin-inline: 50px;
   }
 

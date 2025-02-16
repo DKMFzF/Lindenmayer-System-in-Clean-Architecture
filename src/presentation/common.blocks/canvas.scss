@@ -4,6 +4,7 @@
 
 .canvas {
   &__container {
-    @include logic-features.logic-size(100%, 100%)
+    inline-size: 100%;
+    block-size: 100%;
   }
 }
