@@ -1,0 +1,9 @@
+@use '../scss/variables' as *;
+@use '../scss/mixins/logic-features';
+@use '../scss/mixins/flex-display';
+
+.canvas {
+  &__container {
+    @include logic-features.logic-size(100%, 100%)
+  }
+}
