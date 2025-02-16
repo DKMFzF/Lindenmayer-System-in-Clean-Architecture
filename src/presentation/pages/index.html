@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>L-System</title>
-</head>
-<body class="page">
-  <div class="page__wrapper">
-    <header class="header">
-      <div class="header__cover"></div>
-    </header>
-    <main class="content">
-      <div class="">
-        <div class="content__title-container">
-          <h1 class="title">L-System</h1>
-        </div>
-        <div class="canvas__container content__canvas-container">
-          <canvas id="canvas" class="canvas__body page__body"></canvas>
-        </div>
-      </div>
-    </main>
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>L-System</title>
+	</head>
+	<body class="page">
+		<div class="page__wrapper">
+			<main class="content">
+				<div class="hero">
+					<div class="hero__blur"></div>
+					<div class="hero__wrapper-gradient"></div>
+					<div class="container">
+            <div class="container__wrapper">
+              <div class="hero__content">
+                <div class="hero__content-container hero__container-text-info">
+                  <div class="hero__tags-container">
+                    <span class="hero__tag">Pythagorean Tree</span>
+                    <span class="hero__tag">Cantor Set</span>
+                    <span class="hero__tag">Koch curve</span>
+                    <span class="hero__tag">Sierpinski Triangle</span>
+                  </div>
+                  <h1 class="hero__title">Lindenmayer System</h1>
+                  <p class="hero__subtitle">
+                    The L-system (Lindenmayer system) is a formal grammar used to
+                    model biological growth and generate complex structures like
+                    fractals. It includes an alphabet of symbols, an initial
+                    axiom, and rewriting rules that transform symbols into
+                    sequences at each step. As a parallel rewriting system, it
+                    processes all symbols simultaneously, making it ideal for
+                    modeling branching and recursive patterns.
+                  </p>
+                </div>
+                <div class="hero__content-container hero__container-img">
+                  <img
+                    class="hero__img"
+                    src="<%=require('../../static/tree-pifagor.png')%>"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+
+				<!-- <div class="">
+          <div class="content__title-container">
+            <h2 class="title">L-System</h2>
+          </div>
+          <div class="canvas__container content__canvas-container">
+            <canvas id="canvas" class="canvas__body page__body"></canvas>
+          </div>
+        </div> -->
+			</main>
+		</div>
+	</body>
 </html>

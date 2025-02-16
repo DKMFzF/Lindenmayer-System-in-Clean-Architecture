@@ -1,0 +1,118 @@
+@use '../scss/variables' as *;
+@use '../scss/mixins/flex-display';
+@use '../scss/mixins/logic-features';
+@use '../scss/mixins/background';
+
+.hero {
+  @include logic-features.logic-size(100vh);
+  @include background.background('../../static/tree.png');
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  &__blur {
+    position: absolute;
+    @include logic-features.logic-size(100%, 100%);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+  }
+
+  &__wrapper-gradient {
+    @include logic-features.logic-size(100%, 100%);
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(to top, #000 10%, transparent);
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    @include logic-features.logic-size(100%, 100%);
+    position: relative;
+    z-index: 4;
+  }
+
+  &__content-container {
+    inline-size: 50%;
+  }
+
+  &__container-text-info > :not(:first-child) {
+    margin-block-start: 20px;
+  }
+  
+  &__tags-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__tag {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 15px;
+    white-space: nowrap;
+    font-size: $fontSizeDefault;
+  }
+
+  &__title {
+    font-size: $fontSizeTitle;
+    color: $accentColor;
+  }
+
+  &__subtitle-container {
+    margin-block-start: 25px;
+  }
+
+  &__subtitle {
+    padding-inline-end: 10%;
+    font-size: $fontSizeDefault;
+  }
+
+  &__container-img {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__img {
+    inline-size: 100%;
+  }
+
+  @media screen and (width < 1440px) {
+    &__tag {
+      font-size: 0.5rem;
+    }
+  }
+
+  @media screen and (width < 768px) {
+    &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content-container {
+      inline-size: 100%;
+    }
+
+    &__container-img {
+      display: none;
+    }
+  }
+
+  @media screen and (width < 500px) {
+    &__tags-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2px;
+    }
+    
+    &__tag {
+      padding: 5px;
+    }
+
+    &__subtitle {
+      padding: 0;
+    }
+  }
+}

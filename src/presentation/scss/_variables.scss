@@ -1,1 +1,15 @@
-$mainfint: 'Comfortaa', sans-serif;
+$mainfont: 'Comfortaa', sans-serif;
+$fontSizeTitle: clamp(1.5rem, 1.2093rem + 2.3256vw, 4rem);
+$fontSizeDefault: clamp(0.8rem, 0.7767rem + 0.186vw, 1rem);
+$accentColor: #ceff1d;
+$backgroundColor: #000000; 
+
+$breakpoints: (
+  xss: 320px,
+  xs: 500px,
+  sms: 768px,
+  sm: 1024px,
+  md: 1440px,
+  lg: 1920px,
+  xl: 2560px,
+);

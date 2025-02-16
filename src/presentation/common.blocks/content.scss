@@ -1,10 +1,6 @@
 @use '../scss/mixins/flex-display';
 
 .content {
-  background-color: #000;
-  color: #ffffff;
-  
-
   &__title-container {
      @include flex-display.flex($justify: center, $align: center)
   }

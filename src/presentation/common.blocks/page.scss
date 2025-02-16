@@ -1,13 +1,20 @@
 @use '../scss/variables' as *;
 @use '../scss/mixins/logic-features';
 @use '../scss/mixins/flex-display';
+@use 'sass:map';
 
-.page {
-  // @include flex-display.flex($justify: center, $align: center);
-  font-family: $mainfint;
-
+html,
+body.page {
+  font-family: $mainfont;
+  font-size: $fontSizeDefault;
+  color: #ffffff;
+  background: $backgroundColor;
 
   &__wrapper {
-    @include logic-features.logic-size(100vh, 100vw);
+    @include logic-features.logic-size(100vw);
+
+    &_locked {
+      position: fixed;
+    }
   }
 }

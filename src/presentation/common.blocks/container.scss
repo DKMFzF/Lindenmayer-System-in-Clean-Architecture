@@ -1,0 +1,47 @@
+@use '../scss/variables' as *;
+@use '../scss/mixins/logic-features';
+@use '../scss/mixins/flex-display';
+@use 'sass:map';
+
+.container {
+  @include flex-display.flex(center, center);
+  @include logic-features.logic-size($block: 100%, $inline: 100%);
+
+  &__wrapper {
+    @include logic-features.logic-size($block: 100%);
+    @include logic-features.logic-size($inline: map.get($breakpoints, lg));
+    padding-block: 100px;
+    margin-inline: 50px;
+  }
+
+  
+  @media screen and (width < map.get($breakpoints, lg)) {
+      &__wrapper {
+        @include logic-features.logic-size($inline: map.get($breakpoints, md));
+      }
+    }
+  
+    @media screen and (width < map.get($breakpoints, md)) {
+      &__wrapper {
+        @include logic-features.logic-size($inline: map.get($breakpoints, sm));
+      }
+    }
+  
+    @media screen and (width < map.get($breakpoints, md)) {
+      &__wrapper {
+        @include logic-features.logic-size($inline: map.get($breakpoints, sm));
+      }
+    }
+  
+    // @media screen and (width < map.get($breakpoints, sm)) {
+    //   &__wrapper {
+    //     @include logic-features.logic-size($inline: map.get($breakpoints, xs));
+    //   }
+    // }
+  
+    @media screen and (width < map.get($breakpoints, xs)) {
+      &__wrapper {
+        @include logic-features.logic-size($inline: map.get($breakpoints, xss));
+      }
+    }
+}

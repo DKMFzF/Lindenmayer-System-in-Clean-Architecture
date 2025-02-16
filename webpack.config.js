@@ -6,6 +6,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { DefinePlugin } = require('webpack');
 const TerserPlugin = require("terser-webpack-plugin");
 
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 require('dotenv').config({
   path: path.join(process.cwd(), process.env.NODE_ENV ? `.env.${process.env.NODE_ENV}` : '.env')
 });
@@ -37,6 +39,12 @@ const config = {
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     new DefinePlugin({
       'process.env.API_ORIGIN': JSON.stringify(process.env.API_ORIGIN ?? '')
+    }),
+
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/static/tree.png', to: 'tree.png' } 
+      ]
     })
   ],
   module: {
