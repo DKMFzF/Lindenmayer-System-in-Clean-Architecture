@@ -23,6 +23,7 @@
     "@webpack-cli/generators": "^3.0.2",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.7.3",
     "dotenv": "^16.3.1",
     "eslint": "8.22.0",
@@ -54,5 +55,9 @@
     "url": "https://github.com/DKMFzF/l-system-in-clean-architecture/issues"
   },
   "homepage": "https://github.com/DKMFzF/l-system-in-clean-architecture#readme",
-  "description": ""
+  "description": "",
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ]
 }

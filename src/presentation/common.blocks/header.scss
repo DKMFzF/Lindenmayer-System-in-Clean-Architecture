@@ -1,0 +1,12 @@
+@use '../scss/mixins/logic-features';
+@use '../scss/mixins/background';
+
+.header {
+  @include logic-features.logic-size(40%);
+  overflow: hidden;
+  background: linear-gradient(to top, #000 10%, #fff);
+
+  &__cover {
+    // @include background.background('../../tree.png')
+  }
+}
