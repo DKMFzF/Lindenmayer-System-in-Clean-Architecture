@@ -1,0 +1,16 @@
+@mixin logic-margin(
+	$block-start: null,
+	$block-end: null,
+	$inline-start: null,
+	$inline-end: null
+) {
+	margin-block-start: $block-start;
+	margin-block-end: $block-end;
+	margin-inline-start: $inline-start;
+	margin-inline-end: $inline-end;
+}
+
+@mixin logic-size($block: null, $inline: null) {
+	block-size: $block;
+	inline-size: $inline;
+}

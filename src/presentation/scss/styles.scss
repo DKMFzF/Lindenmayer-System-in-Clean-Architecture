@@ -1,1 +1,7 @@
+@use '../vendor/comfortaa/index.css';
 @use '../vendor/normalize.css';
+
+// bloks
+@use '../common.blocks/page.scss';
+
+@use 'variables' as *;
