@@ -71,6 +71,10 @@ Clean Architecture is an approach to software design proposed by Robert Martin (
 
 A pure architecture organizes a system in the form of concentric layers, where the outer layers (for example, UI or database) depend on the inner ones (business logic), but not vice versa. This is achieved through the use of abstractions and Dependency Inversion Principle, which makes the system more resilient to change and simplifies its development.
 
+#### The detailed diagram of the project is small
+![uml](./docs/uml.png)
+![state](./docs/state.png)
+
 ## Useful links
 - [What are L-systems?](https://habr.com/ru/articles/540062/)
 - [The Mathematical Beauty of Computing](https://habr.com/ru/articles/69989/)
@@ -88,4 +92,4 @@ A pure architecture organizes a system in the form of concentric layers, where t
 - [The first article of the project](https://bespoyasov.ru/blog/generating-trees-on-canvas-using-typescript-and-oop/)
 - [The second article of the project](https://bespoyasov.ru/blog/generating-trees-on-canvas-using-typescript-and-oop-2/)
 - [The third article of the project](https://bespoyasov.ru/blog/generating-trees-on-canvas-using-typescript-and-oop-3/)
-- [Original project on GitHub](https://github.com/bespoyasov/treees )
+- [Original project on GitHub](https://github.com/bespoyasov/treees)
