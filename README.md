@@ -4,7 +4,7 @@
 </p>
 
 
-__This project used materials from <a href="https://bespoyasov.ru/blog/generating-trees-on-canvas-using-typescript-and-oop /">of this article</a>. The author in the project used additional libraries for dependency management, in my case I implemented part of the library myself in the project. I also added a structure that I think is more suitable for a Clean architecture and a more pleasant UI.__
+__When implementing the project, I used materials from <a href="https://bespoyasov.ru/blog/generating-trees-on-canvas-using-typescript-and-oop /">of this article</a>. The author in the project used additional libraries for dependency management, in my case I implemented part of the library myself in the project. I also added a structure that I think is more suitable for a Clean architecture and a more pleasant UI.__
 
 [Дока на русском](./docs/README.ru.md)
 
