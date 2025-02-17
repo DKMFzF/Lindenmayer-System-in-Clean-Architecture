@@ -3,6 +3,8 @@
   <em>The L-system (Lindenmayer system) is a formal grammar used to model the processes of growth and development of biological organisms, as well as to generate complex structures and fractals. It consists of an alphabet of symbols, an axiom (initial state), and a set of rewriting rules that determine how each symbol is transformed into a sequence of other symbols at each iteration step. L-systems are parallel rewriting systems where all characters are processed simultaneously, which allows efficient modeling of branching and recursive structures. It is allowed and implemented in this project.</em>
 </p>
 
+![app-screen](./docs/app_screen.png)
+
 [Дока на русском](./docs/README.ru.md)
 
 __When implementing the project, I used materials from <a href="https://bespoyasov.ru/blog/generating-trees-on-canvas-using-typescript-and-oop/">of this article</a>. The author in the project used additional libraries for dependency management, in my case I implemented part of the library myself in the project. I also added a structure that I think is more suitable for a Clean architecture and a more pleasant UI.__
