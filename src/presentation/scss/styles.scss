@@ -2,15 +2,14 @@
 @use '../vendor/normalize.css';
 
 // used-blocks
-@use '../common.blocks/container.scss';
 @use '../common.elements/math-formula.scss';
+@use '../common.elements/text.scss';
 
 // bloks
 @use '../common.blocks/page.scss';
+@use '../common.blocks/container.scss';
 @use '../common.blocks/header.scss';
 @use '../common.blocks/hero.scss';
-@use '../common.blocks/content.scss';
-@use '../common.blocks/canvas.scss';
-@use '../common.elements/text.scss';
+@use '../common.blocks/l-system.scss';
 
 @use 'variables' as *;

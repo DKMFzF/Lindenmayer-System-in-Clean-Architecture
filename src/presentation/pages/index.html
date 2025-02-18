@@ -2,105 +2,224 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-    <meta name="color-scheme" content="light">
-    <link rel="icon" href="./favicon.ico" sizes="any" />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+		<meta name="color-scheme" content="light" />
+		<link rel="icon" href="./favicon.ico" sizes="any" />
+		<link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>L-System</title>
 	</head>
 	<body class="page">
 		<div class="page__wrapper">
-      <header class="header">
-        <ul class="header__list-wrapper">
-          <li class="header__list-item">
-            <a class="header__link" aria-label="button" target="_blank" href="https://github.com/DKMFzF/Lindenmayer-System-in-Clean-Architecture">
-              Github project
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" aria-label="button" target="_blank" href="https://github.com/DKMFzF">
-              Author
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" aria-label="button" target="_blank" href="https://en.wikipedia.org/wiki/L-system">
-              L-System
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" aria-label="button" target="_blank" href="https://en.wikipedia.org/wiki/Pythagoras_tree_(fractal)">
-              Pythagoras tree
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" aria-label="button" target="_blank" href="https://en.wikipedia.org/wiki/Fractal">
-              Fractal
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" aria-label="button" target="_blank" href="https://en.wikipedia.org/wiki/Cayley_graph">
-              Cayley graph
-            </a>
-          </li>
-        </ul>
-      </header>
+			<header class="header">
+				<ul class="header__list-wrapper">
+					<li class="header__list-item">
+						<a
+							class="header__link"
+							aria-label="button"
+							target="_blank"
+							href="https://github.com/DKMFzF/Lindenmayer-System-in-Clean-Architecture"
+						>
+							Github project
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a
+							class="header__link"
+							aria-label="button"
+							target="_blank"
+							href="https://github.com/DKMFzF"
+						>
+							Author
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a
+							class="header__link"
+							aria-label="button"
+							target="_blank"
+							href="https://en.wikipedia.org/wiki/L-system"
+						>
+							L-System
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a
+							class="header__link"
+							aria-label="button"
+							target="_blank"
+							href="https://en.wikipedia.org/wiki/Pythagoras_tree_(fractal)"
+						>
+							Pythagoras tree
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a
+							class="header__link"
+							aria-label="button"
+							target="_blank"
+							href="https://en.wikipedia.org/wiki/Fractal"
+						>
+							Fractal
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a
+							class="header__link"
+							aria-label="button"
+							target="_blank"
+							href="https://en.wikipedia.org/wiki/Cayley_graph"
+						>
+							Cayley graph
+						</a>
+					</li>
+				</ul>
+			</header>
 			<main class="content">
 				<div class="hero">
 					<div class="hero__blur"></div>
 					<div class="hero__wrapper-gradient"></div>
 					<div class="container">
-            <div class="container__wrapper">
-              <div class="hero__content">
-                <div class="hero__content-container hero__container-text-info">
-                  <nav class="hero__tags-container">
-                    <span class="hero__tag">Pythagorean Tree</span>
-                    <span class="hero__tag">Cantor Set</span>
-                    <span class="hero__tag">Koch curve</span>
-                    <span class="hero__tag">Sierpinski Triangle</span>
-                  </nav>
-                  <h1 class="hero__title">Lindenmayer System</h1>
-                  <p class="hero__subtitle">
-                    The L-system (<span class="text-accent">Lindenmayer system</span>) is a formal grammar used to
-                    model biological growth and generate complex structures like
-                    fractals. It includes an alphabet of symbols, an initial
-                    axiom, and rewriting rules that transform symbols into
-                    sequences at each step. As a parallel rewriting system, it
-                    processes all symbols simultaneously, making it ideal for
-                    modeling branching and recursive patterns.
-                  </p>
-                  <button class="hero__btn">
-                    Try experimenting!
-                  </button>
-                </div>
-                <div class="hero__content-container hero__container-img">
-                  <math class="hero__math-formula" xmlns="http://www.w3.org/1998/Math/MathML">
-                      <mi>G</mi>
-                      <mo>=</mo>
-                      <mo>(</mo>
-                      <mi>V</mi>
-                      <mo>,</mo>
-                      <mi>ω</mi>
-                      <mo>,</mo>
-                      <mi>P</mi>
-                      <mo>)</mo>
-                  </math>
-                </div>
-              </div>
-            </div>
-          </div>
+						<div class="container__wrapper">
+							<div class="hero__content">
+								<div class="hero__content-container hero__container-text-info">
+									<nav class="hero__tags-container">
+										<span class="hero__tag">Pythagorean Tree</span>
+										<span class="hero__tag">Cantor Set</span>
+										<span class="hero__tag">Koch curve</span>
+										<span class="hero__tag">Sierpinski Triangle</span>
+									</nav>
+									<h1 class="title hero__title">Lindenmayer System</h1>
+									<p class="hero__subtitle">
+										The L-system (<span class="text-accent"
+											>Lindenmayer system</span
+										>) is a formal grammar used to model biological growth and
+										generate complex structures like fractals. It includes an
+										alphabet of symbols, an initial axiom, and rewriting rules
+										that transform symbols into sequences at each step. As a
+										parallel rewriting system, it processes all symbols
+										simultaneously, making it ideal for modeling branching and
+										recursive patterns.
+									</p>
+									<button class="hero__btn">Try experimenting!</button>
+								</div>
+								<div class="hero__content-container hero__container-img">
+									<math
+										class="hero__math-formula"
+										xmlns="http://www.w3.org/1998/Math/MathML"
+									>
+										<mi>G</mi>
+										<mo>=</mo>
+										<mo>(</mo>
+										<mi>V</mi>
+										<mo>,</mo>
+										<mi>ω</mi>
+										<mo>,</mo>
+										<mi>P</mi>
+										<mo>)</mo>
+									</math>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
-        <div class="l-system">
-          <div class="container">
-            <div class="container__wrapper">
-              <h2 class="title">L-System</h2>
-              <div>
-                <canvas id="canvas"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
+				<div class="l-system">
+					<div class="container">
+						<div class="container__wrapper">
+							<div class="l-system__content">
+								<h2 class="title l-system__title">
+									Create a Pythagorean tree!
+								</h2>
+								<div class="l-system__section-action">
+									<div class="l-system__half l-system__settings-actions">
+										<div class="l-system__description-settings">
+											<h3
+												class="sub-title text-accent l-system__element-description l-system__title-description"
+											>
+												Description for generation
+											</h3>
+											<p
+												class="l-system__element-description l-system__paragraph-description"
+											>
+												Here you can generate your own Pythagorean tree. How it
+												works is described below. In the meantime, let's focus
+												on the parameters:
+											</p>
+											<ul
+												class="l-system__element-description l-system__list-description-settings"
+											>
+												<li class="l-system__item-description-setting">
+													<span class="text-accent">Iterations</span> — the
+													number of iterations (or steps) in the tree generation
+													process.
+												</li>
+												<li class="l-system__item-description-setting">
+													<span class="text-accent">Axiom</span> — the initial
+													line (axiom) of the L-system.
+												</li>
+												<li class="l-system__item-description-setting">
+													<span class="text-accent">Stem Length</span> — the
+													length of the main stem (or segment) of the tree.
+												</li>
+												<li class="l-system__item-description-setting">
+													<span class="text-accent">Joint Angle</span> — the
+													angle between the branches of the tree.
+												</li>
+											</ul>
+										</div>
+										<div class="l-system__settings">
+											<form name="l-system-settings">
+												<div class="l-system__container-settings">
+													<div class="l-system__conainer-input">
+														<label class="l-system__label l-system__half"
+															>Iterations</label
+														>
+														<input
+															class="l-system__input l-system__half"
+															type="range"
+														/>
+													</div>
+													<div class="l-system__conainer-input">
+														<label class="l-system__label l-system__half"
+															>Axiom</label
+														>
+														<input
+															class="l-system__input l-system__half"
+															type="range"
+														/>
+													</div>
+													<div class="l-system__conainer-input">
+														<label class="l-system__label l-system__half"
+															>Stem Length</label
+														>
+														<input
+															class="l-system__input l-system__half"
+															type="range"
+														/>
+													</div>
+													<div class="l-system__conainer-input">
+														<label class="l-system__label l-system__half"
+															>Joint Angle</label
+														>
+														<input
+															class="l-system__input l-system__half"
+															type="range"
+														/>
+													</div>
+												</div>
+												<button type="submit">Generate</button>
+											</form>
+										</div>
+									</div>
+									<div class="l-system__half l-system__container-canvas">
+										<canvas id="canvas"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
 		</div>
 	</body>

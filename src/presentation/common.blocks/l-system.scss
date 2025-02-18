@@ -1,0 +1,49 @@
+@use '../scss/variables' as *;
+@use '../scss/mixins/flex-display';
+@use '../scss/mixins/logic-features';
+@use '../scss/mixins/background';
+
+.l-system {
+  &__content {
+    margin-block: 100px;
+    @include flex-display.flex($gap: 100px)
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__section-action {
+    @include flex-display.flex($direction: row);
+  }
+
+  &__half {
+    inline-size: 50%;
+  }
+
+  &__settings-actions {
+    @include flex-display.flex($direction: column, $justify: center);
+  }
+
+  &__description-settings {
+    margin-block: 150px;
+    padding-inline-end: 10%;
+    @include flex-display.flex($justify: center);
+  }
+
+  &__element-description:not(:first-child) {
+    margin-block-start: 20px;
+  }
+
+  &__item-description-setting:not(:first-child) {
+    padding-block-start: 10px;
+  }
+
+  &__conainer-input {
+    display: flex;
+  }
+
+  &__container-canvas {
+    background-color: #fff;
+  }
+}

@@ -10,11 +10,9 @@
   &__wrapper {
     @include logic-features.logic-size($block: 100%);
     @include logic-features.logic-size($inline: map.get($breakpoints, lg));
-    // padding-block: 100px;
     margin-inline: 50px;
   }
 
-  
   @media screen and (width < map.get($breakpoints, lg)) {
       &__wrapper {
         @include logic-features.logic-size($inline: map.get($breakpoints, md));
@@ -32,12 +30,6 @@
         @include logic-features.logic-size($inline: map.get($breakpoints, sm));
       }
     }
-  
-    // @media screen and (width < map.get($breakpoints, sm)) {
-    //   &__wrapper {
-    //     @include logic-features.logic-size($inline: map.get($breakpoints, xs));
-    //   }
-    // }
   
     @media screen and (width < map.get($breakpoints, xs)) {
       &__wrapper {

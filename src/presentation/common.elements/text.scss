@@ -1,8 +1,12 @@
 @use '../scss/variables' as *;
 
-// .title {
-//   font-size: 2rem;
-// }
+.title {
+  font-size: $fontSizeTitle;
+}
+
+.sub-title {
+ font-size: $fontSizeSubTitle; 
+}
 
 .text-accent {
   color: $accentColor;
