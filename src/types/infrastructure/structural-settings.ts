@@ -10,6 +10,7 @@ export interface IStructuralSettings {
   application: {
     stack: string;
     interpreter: string;
+    rangeInputApp: string;
   }
 
   adapters: {

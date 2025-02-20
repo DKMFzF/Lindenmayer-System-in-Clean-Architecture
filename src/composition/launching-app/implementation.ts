@@ -3,6 +3,7 @@ import { ISystemBuilder } from "@/domain/l-system/types";
 import { Drawer } from "@/adapters/graphics/drawer/types";
 import { SystemInterpreter } from "@/application/interpreter/types";
 import { IAppSettings } from "@/types/infrastructure/app-settings";
+import { IRangeInputApp } from "@/application/rangeInput-app/types";
 
 // entry point app (fased pattern)
 export class App implements Application {
@@ -10,6 +11,7 @@ export class App implements Application {
 		private builder: ISystemBuilder,
 		private drawer: Drawer,
 		private interpreter: SystemInterpreter,
+		private rangeInput: IRangeInputApp,
 		private settings: IAppSettings
 	) {}
 
@@ -20,5 +22,6 @@ export class App implements Application {
       const { line, ...settings } = instruction;
       this.drawer.drawLine(line, settings);
     });
+		document.addEventListener('DOMContentLoaded', () => this.rangeInput.initialize(this.settings))
 	}
 }

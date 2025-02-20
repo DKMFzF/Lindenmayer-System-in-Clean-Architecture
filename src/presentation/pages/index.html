@@ -169,46 +169,56 @@
 											</ul>
 										</div>
 										<div class="l-system__settings">
-											<form name="l-system-settings">
+											<form name="l-system-settings" class="l-system__form">
 												<div class="l-system__container-settings">
-													<div class="l-system__conainer-input">
-														<label class="l-system__label l-system__half"
-															>Iterations</label
-														>
+													<div class="l-system__container-input">
+														<label class="l-system__label">Iterations</label>
 														<input
-															class="l-system__input l-system__half"
+															class="l-system__input"
 															type="range"
+															min="1"
+															max="11"
+															value="6"
 														/>
+														<span class="l-system__value">5</span>
 													</div>
-													<div class="l-system__conainer-input">
-														<label class="l-system__label l-system__half"
-															>Axiom</label
-														>
+													<div class="l-system__container-input">
+														<label class="l-system__label">Axiom</label>
 														<input
-															class="l-system__input l-system__half"
+															class="l-system__input"
 															type="range"
+															min="1"
+															max="11"
+															value="6"
 														/>
+														<span class="l-system__value">5</span>
 													</div>
-													<div class="l-system__conainer-input">
-														<label class="l-system__label l-system__half"
-															>Stem Length</label
-														>
+													<div class="l-system__container-input">
+														<label class="l-system__label">Stem Length</label>
 														<input
-															class="l-system__input l-system__half"
+															class="l-system__input"
 															type="range"
+															min="1"
+															max="101"
+															value="51"
 														/>
+														<span class="l-system__value">50</span>
 													</div>
-													<div class="l-system__conainer-input">
-														<label class="l-system__label l-system__half"
-															>Joint Angle</label
-														>
+													<div class="l-system__container-input">
+														<label class="l-system__label">Joint Angle</label>
 														<input
-															class="l-system__input l-system__half"
+															class="l-system__input"
 															type="range"
+															min="0"
+															max="180"
+															value="91"
 														/>
+														<span class="l-system__value">90</span>
 													</div>
 												</div>
-												<button type="submit">Generate</button>
+												<button type="submit" class="l-system__submit-button">
+													Generate
+												</button>
 											</form>
 										</div>
 									</div>

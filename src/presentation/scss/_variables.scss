@@ -5,6 +5,16 @@ $fontSizeDefault: clamp(0.8rem, 0.7767rem + 0.186vw, 1rem);
 $accentColor: #ceff1d;
 $backgroundColor: #000000; 
 
+// Переменные для цветов и размеров
+$primary-color: #007bff;
+$hover-color: #0056b3;
+$background-color: #f9f9f9;
+$text-color: #333;
+$border-radius: 10px;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$input-thumb-size: 20px;
+$input-track-height: 8px;
+
 $breakpoints: (
   xss: 320px,
   xs: 500px,

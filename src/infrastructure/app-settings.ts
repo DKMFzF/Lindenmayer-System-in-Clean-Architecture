@@ -18,4 +18,6 @@ export const APP_SETTINGS: IAppSettings = {
   jointAngle: 20,
   leafWidth: 4,
   stemWidth: 16,
+
+  rangeAppSettings: '.l-system__input[type="range"]',
 };

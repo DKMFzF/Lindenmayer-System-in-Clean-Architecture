@@ -1,4 +1,5 @@
 import { Angle, Length, PixelsAmount, Size } from "@/types/domain/geometry";
+import { RangeClass } from '@/types/application/rangeApp';
 import { Axiom, IterationsCount, RuleSet } from "../domain/l-system";
 
 export interface IAppSettings {
@@ -13,4 +14,6 @@ export interface IAppSettings {
 
   leafWidth: PixelsAmount;
   stemWidth: PixelsAmount;
+
+  rangeAppSettings: RangeClass;
 }

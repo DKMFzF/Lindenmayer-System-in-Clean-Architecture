@@ -11,6 +11,7 @@ import '@/domain/geometry/shape/composition'
 // application
 import '@/application/Stack/composition';
 import '@/application/interpreter/composition';
+import '@/application/rangeInput-app/composition';
 
 // adapters
 import '@/adapters/dom/composition'

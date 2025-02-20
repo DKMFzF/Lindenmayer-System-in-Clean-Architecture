@@ -12,6 +12,7 @@ export const STRUCTURAL_SETTINGS: IStructuralSettings = {
   application: {
     stack: 'JointsStack',
     interpreter: 'SystemInterpreter',
+    rangeInputApp: 'IRangeInputApp'
   },
 
   adapters: {

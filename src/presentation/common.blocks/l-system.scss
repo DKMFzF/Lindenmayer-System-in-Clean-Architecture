@@ -36,11 +36,94 @@
   }
 
   &__item-description-setting:not(:first-child) {
-    padding-block-start: 10px;
+    margin-block-start: 10px;
   }
 
   &__conainer-input {
     display: flex;
+  }
+
+  &__form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $background-color;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+  }
+
+  &__container-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__container-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: $text-color;
+    font-weight: bold;
+  }
+
+  &__input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: $input-track-height;
+    background: #ddd;
+    border-radius: $border-radius;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: $input-thumb-size;
+      height: $input-thumb-size;
+      background: $primary-color;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: $input-thumb-size;
+      height: $input-thumb-size;
+      background: $primary-color;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  &__value {
+    font-size: 14px;
+    color: $text-color;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  &__submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $hover-color;
+    }
   }
 
   &__container-canvas {
