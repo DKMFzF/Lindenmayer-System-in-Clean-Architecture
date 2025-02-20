@@ -16,12 +16,39 @@ export class App implements Application {
 	) {}
 
 	start(): void {
-		const system = this.builder.build(this.settings);
-		const instructions = this.interpreter.translate(system);
-		instructions.forEach((instruction) => {
-      const { line, ...settings } = instruction;
-      this.drawer.drawLine(line, settings);
-    });
-		document.addEventListener('DOMContentLoaded', () => this.rangeInput.initialize(this.settings))
+		this.generateTree()
+		// инициализация range input
+		document.addEventListener('DOMContentLoaded', () => this.rangeInput.initialize(this.settings));
+	
+		// Добавляем обработчик на кнопку "Generate"
+		const generateButton = document.querySelector('.l-system__submit-button') as HTMLButtonElement;
+		generateButton.addEventListener('click', (event) => {
+			event.preventDefault();
+			this.updateSettings();
+			this.generateTree();
+		});
 	}
+
+	private generateTree(): void {
+    this.drawer.clear(); // Очищаем холст перед новой отрисовкой
+
+    // Строим систему и переводим её в графику
+    const system = this.builder.build(this.settings);
+    const instructions = this.interpreter.translate(system);
+
+    // Рисуем линии
+    instructions.forEach((instruction) => {
+        const { line, ...settings } = instruction;
+        this.drawer.drawLine(line, settings);
+    });
+	}
+
+
+	private updateSettings(): void {
+		const inputs = document.querySelectorAll('.l-system__input') as NodeListOf<HTMLInputElement>;
+		if (inputs.length < 3) throw new Error('Ошибка: Не удалось найти все range inputs');
+		this.settings.iterations = Number(inputs[0].value);
+		this.settings.stemLength = Number(inputs[1].value);
+		this.settings.jointAngle = Number(inputs[2].value);
+	}	
 }

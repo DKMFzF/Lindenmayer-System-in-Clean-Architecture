@@ -10,10 +10,7 @@ export class JointsStack implements Stack<TreeJoint> {
   }
 
   public pop(): TreeJoint {
-    if (this.items.length <= 0) {
-      throw new Error("Underflow error: The stack is empty.");
-    }
-
+    if (this.items.length <= 0) throw new Error("Underflow error: The stack is empty.");
     const item = this.items.pop()!;
     return item;
   }

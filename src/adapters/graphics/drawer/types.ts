@@ -8,4 +8,5 @@ export type BrushSettings = {
 
 export interface Drawer {
 	drawLine(line: Line, settings?: BrushSettings): void;
+	clear(): void;
 }

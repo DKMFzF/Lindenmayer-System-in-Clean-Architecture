@@ -35,11 +35,15 @@ export class SystemToGeometryMapper implements SystemInterpreter {
 
 	// Реализуем публичный метод:
 	public translate(expression: Expression): List<Instruction> {
+		if (this.drawInstructions) this.drawInstructions = [];
+		if (this.currentAngle) this.currentAngle = 0;
+
 		this.currentLocation = { ...this.startSelector.selectStart() };
     this.currentWidth = this.settings.stemWidth;
     this.systemTokens = expression.split("");
 
     this.systemTokens.forEach(this.translateToken);
+
     return this.drawInstructions;
 	}
 

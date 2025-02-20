@@ -21,11 +21,11 @@ import { ISystemBuilder, SystemSettings } from '@/domain/l-system/types';
  * @private { state: SystemState } - это наше локальное состояние после каждой итерации
  * @private { applyRules(rules: RuleSet): void  } - метод, который применяет правила к текущему состоянию
  */
-
 export class Builder implements ISystemBuilder {
   private state: SystemState = '';
 
   public build({ rules, initiator, iterations }: SystemSettings): Expression {
+
     this.state = initiator;
 
 		for (let i = 0; i < iterations; i++) this.applyRules(rules);

@@ -5,10 +5,12 @@ import { DEFAULT_COLOR, DEFAULT_WIDTH } from "./constants";
 
 export class CanvasDrawer implements Drawer {
   private context: DrawingContext = null;
+	private canvas: HTMLCanvasElement;
 
   constructor(private contextProvider: DrawingContextProvider) {
     this.context = this.contextProvider.getInstance();
 		if (!this.context) throw new Error('Failed to access the drawing context.');
+		this.canvas = this.context.canvas;
   }
 
 	// Метод drawLine принимает объект Line и объект BrushSettings,
@@ -25,5 +27,11 @@ export class CanvasDrawer implements Drawer {
 		this.context.moveTo(start.x, start.y);
 		this.context.lineTo(end.x, end.y);
 		this.context.stroke();
+  }
+
+	// очитить канвас
+	public clear(): void {
+    if (!this.context || !this.canvas) return;
+    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
 }
