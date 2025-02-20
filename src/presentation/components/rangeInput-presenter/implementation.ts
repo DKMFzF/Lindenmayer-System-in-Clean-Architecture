@@ -1,11 +1,13 @@
+import { RangeInputElements } from '@/presentation/components/rangeInput-presenter/types';
+
 export interface IRangeInputPresenter {
     initialize(): void;
 }
 
 export class RangeInputPresenter implements IRangeInputPresenter {
-    private rangeInputs: NodeListOf<HTMLInputElement>;
+    private rangeInputs: RangeInputElements;
 
-    constructor(rangeInputs: NodeListOf<HTMLInputElement>) {
+    constructor(rangeInputs: RangeInputElements) {
         this.rangeInputs = rangeInputs;
     }
 
