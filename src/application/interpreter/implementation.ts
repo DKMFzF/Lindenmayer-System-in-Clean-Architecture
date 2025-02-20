@@ -24,7 +24,6 @@ export class SystemToGeometryMapper implements SystemInterpreter {
 	private systemTokens: List<Character> = [];
 	private drawInstructions: List<Instruction> = [];
 
-	// Объявляем зависимости:
 	constructor(
 		private shapeBuilder: IShapeBuilder,
 		private startSelector: IStartSelector,
@@ -33,7 +32,6 @@ export class SystemToGeometryMapper implements SystemInterpreter {
 		private random: RandomSource // обёртка для Math.random()
 	) {}
 
-	// Реализуем публичный метод:
 	public translate(expression: Expression): List<Instruction> {
 		if (this.drawInstructions) this.drawInstructions = [];
 		if (this.currentAngle) this.currentAngle = 0;

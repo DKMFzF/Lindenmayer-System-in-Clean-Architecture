@@ -20,4 +20,5 @@ export const APP_SETTINGS: IAppSettings = {
   stemWidth: 16,
 
   rangeAppSettings: '.l-system__input[type="range"]',
+  btnUpdateThree: '.l-system__submit-button',
 };

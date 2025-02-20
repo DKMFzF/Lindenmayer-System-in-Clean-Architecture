@@ -4,6 +4,7 @@ import { Drawer } from "@/adapters/graphics/drawer/types";
 import { SystemInterpreter } from "@/application/interpreter/types";
 import { IAppSettings } from "@/types/infrastructure/app-settings";
 import { IRangeInputApp } from "@/application/rangeInput-app/types";
+import { APP_SETTINGS } from "@/infrastructure/app-settings";
 
 // entry point app (fased pattern)
 export class App implements Application {
@@ -17,11 +18,10 @@ export class App implements Application {
 
 	start(): void {
 		this.generateTree()
-		// инициализация range input
 		document.addEventListener('DOMContentLoaded', () => this.rangeInput.initialize(this.settings));
 	
-		// Добавляем обработчик на кнопку "Generate"
-		const generateButton = document.querySelector('.l-system__submit-button') as HTMLButtonElement;
+		// обновление дерева
+		const generateButton = document.querySelector(APP_SETTINGS.btnUpdateThree) as HTMLButtonElement;
 		generateButton.addEventListener('click', (event) => {
 			event.preventDefault();
 			this.updateSettings();
@@ -29,21 +29,18 @@ export class App implements Application {
 		});
 	}
 
+	// генерация дерева
 	private generateTree(): void {
-    this.drawer.clear(); // Очищаем холст перед новой отрисовкой
-
-    // Строим систему и переводим её в графику
+    this.drawer.clear();
     const system = this.builder.build(this.settings);
     const instructions = this.interpreter.translate(system);
-
-    // Рисуем линии
     instructions.forEach((instruction) => {
         const { line, ...settings } = instruction;
         this.drawer.drawLine(line, settings);
     });
 	}
 
-
+	// обновление настроек
 	private updateSettings(): void {
 		const inputs = document.querySelectorAll('.l-system__input') as NodeListOf<HTMLInputElement>;
 		if (inputs.length < 3) throw new Error('Ошибка: Не удалось найти все range inputs');
